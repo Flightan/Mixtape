@@ -6,7 +6,7 @@ exports.post = function(req, res) {
 }
 
 exports.list = function(req, res) {
-    Comment.find({}).sort('date',-1).execFind(function(err,docs){
-        res.send(comments.sort({date: -1}));
+    Comment.find({}).sort({'date': -1}).execFind(function(err,docs){
+        res.send(docs);
     });
 }
