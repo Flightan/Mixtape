@@ -1,0 +1,29 @@
+doctype 5
+html
+    head
+        title= title
+        meta(name='robots',content='noindex')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet',type='text/css',href='/stylesheets/page-player.css')
+        link(rel='stylesheet',type='text/css',href='/stylesheets/flashblock.css')
+
+        script(src='/javascripts/soundmanager2/soundmanager2-nodebug-jsmin.js')
+        script(src='/javascripts/soundmanager2/page-player.js')
+        script(src='/javascripts/jquery-1.8.3.min.js')
+        script(src='/javascripts/comments.js')
+        script(type='text/javascript')
+            soundManager.setup({
+                url: '/swf/',
+                flashVersion: 9
+            });
+    body
+        block content
+    script(type='text/javascript')
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-16601028-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();

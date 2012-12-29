@@ -1,0 +1,155 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.comment {
+    margin: 10px 5px;
+    padding: 10px 0;
+    background: url(/images/dots_horizontal.jpg) repeat-x bottom left; color:#333333;
+}
+
+.comment h3 {
+    font-weight: bold;
+    color: #333333;
+    margin-left: 3px;
+    margin-bottom: 0;
+}
+
+.date {
+    margin-top: 0px;
+    color: #555555;
+    font: italic 9px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.new_comment * {
+    margin: 10px 5px;
+    display: block;
+}
+
+label {
+    font: bold 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.box {
+    line-height: 18px !important;
+    padding: 10px 10px 5px !important;
+    -moz-box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.12 ) inset;
+    -webkit-box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.12 ) inset;
+    box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.12 ) inset;
+    background: #FCFCFC;
+    background: rgba( 255, 255, 255, 0.85 );
+    border: 1px solid #C9C9C9;
+    border: 1px solid rgba( 0, 0, 0, 0.2 );
+}
+
+textarea {
+    -webkit-appearance: none;
+    border: none !important;
+    background: transparent !important;
+    font-size: 14px;
+    font-family: inherit;
+    color: #4B4B4B;
+    color: rgba( 0, 0, 0, 0.7 );
+    text-shadow: 0 1px 0 rgba( 255, 255, 255, 0.45 );
+    width: 100%;
+    height: 125px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none !important;
+    float: none;
+}
+
+.m-btn {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  margin: 0;
+  padding: 10px 14px;
+  margin-top: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: -ms-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: -o-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: linear-gradient(top, #eeeeee, #eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding;
+  /* IE hacks */
+
+  zoom: 1;
+  z-index: 1;
+  *display: inline;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #333333;
+  min-width: 42px;
+
+  text-shadow: #ffffff 0 1px 0;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  vertical-align: inherit;
+}
+.m-btn:hover,
+.m-btn:focus,
+.m-btn:active,
+.m-btn.active {
+  color: #333;
+  text-decoration: none;
+  background-color: #dcdcdc;
+  background-image: -moz-linear-gradient(top, #dcdcdc, #dcdcdc);
+  background-image: -ms-linear-gradient(top, #dcdcdc, #dcdcdc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dcdcdc), to(#dcdcdc));
+  background-image: -webkit-linear-gradient(top, #dcdcdc, #dcdcdc);
+  background-image: -o-linear-gradient(top, #dcdcdc, #dcdcdc);
+  background-image: linear-gradient(top, #dcdcdc, #dcdcdc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dcdcdc', endColorstr='#dcdcdc', GradientType=0);
+  z-index: 100;
+  outline: none;
+}
+.m-btn:active, .m-btn.active {
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #dcdcdc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #dcdcdc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#dcdcdc));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dcdcdc);
+  background-image: -o-linear-gradient(top, #eeeeee, #dcdcdc);
+  background-image: linear-gradient(top, #eeeeee, #dcdcdc);
+  background-repeat: repeat-x;
+   -webkit-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dcdcdc', GradientType=0);
+}
+.m-btn:focus {
+  /* Blue border on button focus. */
+  border-color: #4D90FE;
+}
+/* overrides extra padding on button elements in Firefox */
+.m-btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.m-btn.blue-stripe
+{
+    border-left: 3px solid #4d90fe;
+}

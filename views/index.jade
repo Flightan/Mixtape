@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1 BADBADNOTGOOD / BBNG2
+  div
+    ul.playlist
+      li
+        a(href='./mp3/01 Earl (Feat. Leland Whitty).mp3') Earl (Feat. Leland Whitty)
+      li
+        a(href='./mp3/02 Vices.mp3') Vices
+      li
+        a(href='./mp3/03 Rotten Decay.mp3') Rotten Decay
+      li
+        a(href='./mp3/04 Limit To Your Love.mp3') Limit To Your Love
+      li
+        a(href='./mp3/05 Bastard _ Lemonade.mp3') Bastard / Lemonade
+      li
+        a(href='./mp3/06 CHSTR.mp3') CHSTR
+      li
+        a(href='./mp3/07 UWM (Feat. Leland Whitty).mp3') UWM (Feat. Leland Whitty)
+      li
+        a(href='./mp3/08 DMZ.mp3') DMZ
+      li
+        a(href='./mp3/09 CMYK.mp3') CMYK
+      li
+        a(href='./mp3/10 Flashing Lights.mp3') Flashing Lights
+      li
+        a(href='./mp3/11 You Made Me Realise (Feat. Luan Phung).mp3') You Made Me Realise (Feat. Luan Phung)
+
+  #comments
+
+  .new_comment
+    input#nickname.box(placeholder='Nickname')
+    .box
+      textarea#comment(placeholder='Comment')
+    .save
+      p.m-btn.blue-stripe#save Save
